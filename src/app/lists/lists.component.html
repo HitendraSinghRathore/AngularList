@@ -1,0 +1,50 @@
+<div class="table-list">
+ <table class="table ">
+  <thead>
+      <tr>
+          <th class="col-1">
+            Date
+          </th>
+          <th class="col-6">
+            List Name
+          </th>
+          <th class="col-1">
+            No. of Entities
+          </th>
+          <th class="col-2">
+            Actions
+          </th>
+
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of listData" [ngClass]="{'selected-list': item.id === selectedId}">
+      <td class="col-1 left-col">
+        <span *ngIf="item.date">{{item.date | date: 'MMM dd'}}</span>
+        <span class="icon" *ngIf="!item.date"><i class="fa fa-clock-o"></i></span>
+      </td>
+      <td class="col-6" class="item-name" [ngClass]="{'link-class': item.entities.length === 0}" (click)="detailsSelected(item)">{{item.name}}</td>
+      <td align="right" class="col-1">{{item.entities?.length}}</td>
+      <td class="col-2 action-col">
+        <span class="icon action-icon">
+            <i class="fa fa-envelope-o "  placement="bottom" ngbTooltip="Coming soon"></i>
+      </span>
+       <span class="icon action-icon">
+            <i class="fa fa-share-alt"  placement="bottom" ngbTooltip="Coming soon"></i>
+      </span>
+       <span class="icon action-icon">
+            <i class="fa fa-pencil "  placement="bottom" ngbTooltip="Coming soon"></i>
+      </span>
+       <span class="icon action-icon">
+            <i class="fa fa-trash"  placement="bottom" ngbTooltip="Coming soon"></i>
+      </span>
+      </td>
+      <td class="col-2 right-col" align="right">
+        <button class="btn btn-light btn-sm detail-btn" (click)="detailsSelected(item)">Details</button>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+</div>

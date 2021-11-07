@@ -1,0 +1,14 @@
+<div class="details-box">
+<div class="description" *ngIf="!selected?.description">
+  No description yet <a class="add-desc"> &plus; Add description</a>
+</div>
+<div class="description" *ngIf="selected?.description">
+  <h6>Description</h6>
+  <p>{{selected?.description}}</p>
+</div>
+
+<div class="lists" *ngIf="selected?.entities.length > 0">
+ <div class="list-item" *ngFor="let item of selected.entities">{{item}}</div>
+
+</div>
+</div>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+      <div class=" navbar-container">
+        <a class="nav-link active text-sm" aria-current="saved-lists" href="#" >
+          <span class="icon">
+            <i class="fa fa-list"></i>
+          </span> Saved lists
+        </a>
+        <a class="nav-link text-sm"  aria-label="saved-filter"  placement="bottom" ngbTooltip="Coming soon">
+           <span class="icon">
+            <i class="fa fa-filter"></i>
+          </span>Saved filters</a>
+        <a class="nav-link text-sm"  aria-label="search-history"  placement="bottom" ngbTooltip="Coming soon">
+           <span class="icon">
+            <i class="fa fa-history"></i>
+          </span>
+        Search history </a>
+      </div>
+    <div class=" search-div">
+
+      <form class="d-flex search-bar" [formGroup]="searchForm">
+      <input class="form-control me-2 text-sm" type="search" formControlName="search" placeholder="Search" aria-label="Search">
+      </form>
+
+    </div>
+  </div>
+</nav>

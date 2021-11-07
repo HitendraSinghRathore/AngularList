@@ -1,0 +1,36 @@
+.nav-link {
+  text-transform: uppercase;
+  display: flex;
+  color: black;
+  align-items: center;
+  padding: auto 15px;
+  letter-spacing: 1px;
+}
+
+@media (max-width:992px) {
+    .search-bar {
+    width: 50vw;
+    }
+}
+.navbar {
+  min-height: 72px;
+  background-color: #f5f5f5;
+}
+
+.active{
+  color: white;
+  background-color: #002b42;
+  border-radius: 2px;
+
+
+}
+.search-bar {
+  width: 40vw;
+}
+.navbar-container {
+  display: flex;
+}
+.icon {
+  margin-right: 10px;
+  margin-right: 10px;
+}

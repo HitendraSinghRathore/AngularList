@@ -1,0 +1,32 @@
+.description {
+background-color: rgb(236, 232, 232);
+width: 95%;
+padding: 10px;
+font-size: 12px;
+border-radius: 3px;
+margin-top: 15px;
+margin-bottom: 22px;
+}
+.add-desc{
+  margin-left: 5px;
+  color: #004c75;
+  text-decoration: none;
+  font-weight: bold;
+}
+.lists {
+  font-size: 12px;
+  color: rgb(33, 95, 153);
+}
+
+.details-box {
+ height: 100%;
+  padding-left: 15px;
+}
+.list-item{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+h6{
+  color:#002b42;
+}
